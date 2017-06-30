@@ -1,0 +1,66 @@
+<ion-view view-title="Location">
+  <ion-content>
+    <div class="list">
+
+      <a class="item item-icon-left item-icon-right" href="#">
+        <i class="icon ion-ios-alarm"></i>
+        Date
+        <span class="badge badge-stable">
+          {{data.time | date:'medium'}}
+        </span>
+      </a>
+
+      <a class="item item-icon-left" href="#">
+        <i class="icon ion-earth"></i>
+        Latitude
+        <span class="badge badge-stable">
+          {{data.lat}}
+        </span>
+      </a>
+
+      <a class="item item-icon-left" href="#">
+        <i class="icon ion-planet"></i>
+        Longitude
+        <span class="badge badge-stable">
+          {{data.lng}}
+        </span>
+      </a>
+      <a class="item item-icon-left" href="#">
+        <i class="icon ion-ios-pulse-strong"></i>
+        S.O.
+        <span class="badge badge-stable">
+          {{data.so}}
+        </span>
+      </a>
+      <a class="item item-icon-left" href="#">
+        <i class="icon ion-pound"></i>
+        Version
+        <span class="badge badge-stable">
+          {{data.version}}
+        </span>
+      </a>
+      <a class="item item-icon-left" href="#">
+        <i class="icon ion-leaf"></i>
+        Model
+        <span class="badge badge-stable">
+          {{data.model}}
+        </span>
+      </a>
+      <a class="item item-icon-left" href="#">
+        <i class="icon ion-bug"></i>
+        MAC
+        <span class="badge badge-stable">
+          {{data.macaddress}}
+        </span>
+      </a>
+      <a class="item item-icon-left" href="#">
+        <i class="icon ion-wifi"></i>
+        Connections
+        <span class="badge badge-stable">
+          {{data.connections}}
+        </span>
+      </a>
+
+    </div>
+  </ion-content>
+</ion-view>
